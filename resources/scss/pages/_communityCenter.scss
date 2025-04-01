@@ -1,0 +1,388 @@
+.communityCenterFooter {
+    width: 100%;
+    background-color: #22252D!important;
+}
+
+.communityCenterFooter .footerLinks {
+    color:rgba(255,255,255,.5)!important;
+}
+
+.footerLinks .footerLink {
+    color:rgba(255,255,255,.5)!important;
+}
+
+.communityCenterPageContent {
+    min-height:100%;
+    position:relative;
+    margin-top: 10px;
+    padding: 40px;
+    margin-bottom: 50px;
+} 
+
+.communityCenterPageContent .headline {
+    margin-bottom: 20px;
+}
+
+.communityCenterHeadline {
+    color: #EEF1F5 !important;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.communityCenterSubtitle {
+    font-weight: 400;
+    color: #B0B7C3!important;
+    font-size: 16px;
+}
+
+.communityCenterNav {
+    background-color: #22252D;
+    padding: 23px 40px;
+}
+.communityCenterNav a{
+    color: white;
+}
+
+.communityCenterNav .navbar-brand{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+// Wisches
+.wishSection {
+    width: 60%;
+}
+
+.communityCenterPageContent .headline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wishSection .wishItem {
+    display: inline-flex;
+    width: 100%;
+    padding: 20px 20px;
+    margin-top: 20px;
+    background-color: #22252D;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px -4px rgb(0 0 0 / 25%), inset 0px -1px 1px rgb(0 0 0 / 49%), inset 0px 2px 1px rgb(255 255 255 / 6%);
+    border-radius: 12px;
+}
+
+.wishSection .wishLeft {
+    width: 100px;
+}
+
+.wishSection .wishContent {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.wishContent .wishHeadline{
+    font-size: 22px;
+    color: white!important;
+}
+
+.wishHeaderRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wishInfo {
+    justify-content: end;
+}
+
+.wishAnswer {
+    font-size: 15px;
+    color: white!important;
+}
+
+.wishAnswer:hover {
+    cursor: pointer;
+}
+
+.wishSetTag {
+    background: #377DFF;
+    border: none;
+    font-size: 13px;
+    color: white!important;
+    padding: 6px;
+    border-radius: 6px;
+    max-width: 130px;
+    text-align: center;
+}
+
+.wishTag {
+    font-size: 13px;
+    color: white!important;
+    background: #377DFF;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.wishContent .shortDescription{
+    font-size: 16px;
+    margin-top: 6px;
+    color: #B0B7C3!important;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wishContent ::placeholder {
+    color: white!important;
+}
+
+.wishStatusTag{
+    font-size: 16px;
+    color: white!important;
+    background-color: red;
+    border-radius: 8px;
+}
+
+.votesDiv {
+    display: grid;
+    justify-content: center;
+    padding: 5px 0px;
+    background-color: #22252D;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px -4px rgb(0 0 0 / 25%), inset 0px -1px 1px rgb(0 0 0 / 49%), inset 0px 2px 1px rgb(255 255 255 / 6%);
+    border-radius: 12px;
+}
+
+.voteCount {
+    font-size: 36px;
+    font-weight: 700;
+    color: white!important;
+    text-align: center;
+}
+
+.voteNote {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #B0B7C3!important;
+    text-align: center;
+}
+// Monitoring / Uptime Page
+.monitoringSection {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .monitoringServices {
+        background-color: #232A37;
+        padding: 23px 23px;
+        border-radius: 9px;
+    }
+
+    .monitoringService {
+        display: flex;
+        align-items: center;
+    }
+
+    .monitoringStatistics {
+        background-color: #232A37;
+        padding: 23px 40px;
+        border-radius: 9px;
+        width: 800px;
+    }
+
+    .serviceTitle {
+        width: 180px;
+    }
+
+    .serviceTitle a {
+        font-size: 18px;
+        font-weight: 600;
+        color: white!important;
+    }
+
+    .serviceStatus {
+        font-size: 18px;
+        font-weight: 600;
+        min-height: 40px;
+        margin-left: auto;
+        width: 120px;
+        text-align: left;
+    }
+
+    .serviceStatus a.statusOnline {
+        color: green!important;
+        background-color: transparent !important;
+    }
+
+    .serviceStatus a.statusOffline {
+        color: red!important;
+        background-color: transparent !important;
+    }
+
+    .serviceStatus a.statusNoData {
+        color:gray!important;
+        background-color: transparent !important;
+    }
+
+    .serviceStatus {
+        display: flex;
+        align-items: center;
+    }
+
+    .monitoringStatistics {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .statistic {
+        display: grid;
+    }
+
+    .statistic .title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #B0B7C3 !important;
+        margin-bottom: 6px;
+    }
+
+    .statistic .subtitle {
+        font-size: 18px;
+        font-weight: 800;
+        color: white!important;
+    }
+
+//Bugreports
+    .bugreportStatisticCard {
+        background-color: #22252D;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 8px -4px rgb(0 0 0 / 25%), inset 0px -1px 1px rgb(0 0 0 / 49%), inset 0px 2px 1px rgb(255 255 255 / 6%);
+        border-radius: 12px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .bugStatisticBig {
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 34px;
+        color: #EFEFEF!important;
+    }
+
+    .bugStatisticSmall {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #7F8596!important;
+    }
+
+    .bugreportsLeft {
+        width: 100px;
+        display: flex;
+        align-content: end;
+        align-items: center;
+    }
+
+
+/* Smartphone Hochformat (Portrait) */
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 479px) {
+
+    .communityCenterPageContent .headline {
+        display: block;
+    }
+
+    .headlineRight {
+        margin-top: 20px;
+    }
+
+    .wishSection {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .wishSection .wishItem {
+        display: block;
+    }
+
+    .wishSection .wishContent {
+        margin-left: 0px;
+    }
+
+    .wishSection .wishLeft {
+        width: 100%;
+    }
+
+    .voting {
+        text-align: center;
+    }
+
+    .voting .customButton {
+        width: 100%!important;
+        margin-bottom: 20px;
+    }
+
+    .monitoringSection {
+        margin: auto;
+        width: 100%!important;
+    }
+
+    .serviceUptime {
+        display: none;
+    }
+
+    .monitoringStatistics {
+        display: grid;
+        justify-content: center;
+        justify-items: start;
+        width: 250px;
+    }
+
+    .statistic {
+        margin: 10px 0px;
+    }
+    
+}
+
+/* Smartphone Querformat (Landscape) */
+@media only screen
+  and (min-width: 480px)
+  and (max-width: 1000px) {
+    .monitoringService {
+        display: block!important;
+    }
+
+    .monitoringSection {
+        margin: auto;
+        width: 100%!important;
+    }
+
+    .serviceUptime {
+        margin: 10px 0px;
+    }
+
+    .serviceStatus {
+        margin-left: -10px;
+        margin-bottom: 31px;
+    }
+
+    .monitoringSection {
+        margin: auto;
+        width: 70%;
+    }
+
+    .monitoringStatistics {
+        width: 655px;
+    }
+
+
+}
+
+/* Smartphone Querformat (Landscape) */
+@media only screen
+  and (min-width: 480px)
+  and (max-width: 10480) {
+
+}

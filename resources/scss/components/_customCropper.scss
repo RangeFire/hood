@@ -1,0 +1,56 @@
+.image-drop {
+    width: 100%;
+    min-height: 150px;
+    max-height: 250px;
+    background: #cff;
+    border-radius: 8px;
+
+    border: 2px dashed $blueMain;
+    background: rgba(92, 168, 238, 0.12);
+    cursor: pointer;
+
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.image-drop-text {
+    text-align: center;
+    height: 100%;
+    padding: 40px;
+    background: rgba(92, 168, 238, 0.12);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    max-height: 250px;
+}
+
+.image-drop-text h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.0rem;
+    line-height: $lh150;
+
+    color: $blueMain;
+}
+
+.upload-btn{
+    font-family: $font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: $lh150;
+    text-align: center;
+    color: $title;
+    background: $offWhite;
+    border-radius: 6px;
+    padding: 6px 8px;
+    border: none;
+    outline: none;
+    margin-top: 8px;
+}

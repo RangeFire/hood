@@ -1,0 +1,87 @@
+.form-group {
+    label {
+        @extend .text-muted;
+    }
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(16px + 16px + 16px);
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    line-height: 1.5;
+    color: #495057;
+    background: $background!important;
+    border: 2px solid #343742;
+    background-clip: padding-box;
+    border-radius: 8px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:disabled, &[disabled] {
+        opacity: 0.8;
+        cursor: not-allowed;
+    }
+
+    &:focus {
+        // background: red!important;
+    }
+
+}
+
+input {
+    color: white!important;
+}
+
+textarea {
+    color: white!important;
+}
+
+option {
+    color: white!important;
+}
+
+select {
+    color: white!important;
+}
+
+.form-check-label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #7F8596;
+}
+
+.form-check-input{
+    
+}
+
+label > input[type="checkbox"] {
+    display: none;
+  }
+
+label > input[type="checkbox"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1rem;
+    height: 1rem;
+    background: #1F2128;
+    border: 2px solid #2A85FF;
+    border-radius: 5px;
+    
+}
+
+label > input[type="checkbox"]:checked + *::before {
+    content: "✓";
+    color: white;
+    text-align: center;
+    background: teal;
+    border-color: teal;
+  }
+
+label > input[type="checkbox"]:checked + * {
+    color: teal;
+  }

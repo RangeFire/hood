@@ -1,0 +1,119 @@
+.top-search-bar {
+    width: 650px;
+    height: 70px;
+    background-color: #22252D;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px -4px rgb(0 0 0 / 25%), inset 0px -1px 1px rgb(0 0 0 / 49%), inset 0px 2px 1px rgb(255 255 255 / 6%);
+    border-radius: 12px;
+
+    .search-elements {
+
+        height: 70px;
+
+        .search-img {
+            display: inline;
+            float: left;
+            width: auto;
+            max-width: 5%;
+            margin: {
+                top: 23px;
+                right: 16px;
+                bottom: 23px;
+                left: 23px;
+            }
+        }
+    
+        .search {
+            display: inline;
+            float: left;
+            width: 52%;
+            height: 75%;
+            background: transparent!important;
+            color: $offWhite!important;
+            padding: {
+                left: 0px;
+            }
+            margin: {
+                top: 9px;
+            }
+            border: none;
+
+            &:active, &:after, &:focus{
+                border: none;
+                box-shadow: none;
+            }
+
+        }
+
+        .search-spacer {
+            display: inline;
+            float: right;
+            width: 4px;
+            height: 60%;
+            border-radius: 5px;
+            background: $inputBackground!important;
+            margin: {
+                top: 15px;
+                bottom: 15px;
+                right: 23px;
+                left: 23px;
+            }
+        }
+
+        .status-search {
+            display: inline;
+            float: right;
+            width: 30%;
+            height: 100%;
+
+            .search-filter-img {
+                display: inline;
+                float: left;
+                width: auto;
+                margin: {
+                    top: 24px;
+                    // right: 6px;
+                }
+            }
+
+            .search-filter {
+                display: inline;
+                float: right;
+                width: 70%;
+                height: 50%;
+                margin: {
+                    top: 18px;
+                    right: 23px;
+                }
+
+                border: none;
+
+                &:active, &:after, &:focus{
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+
+        }
+
+        .btn {
+            display: inline;
+            float: right;
+            width: 30%;
+            height: 80%;
+            border: none;
+            padding: 6px;
+            margin: {
+                top: 8px;
+                right: 9px;
+            }
+        }
+
+    }
+
+    
+
+
+
+
+}

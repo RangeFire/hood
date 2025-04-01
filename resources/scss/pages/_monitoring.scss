@@ -1,0 +1,182 @@
+.monitoringItem {
+    padding: 26px;
+    border-radius: 12px;
+    border: 3px solid #232A37;
+}
+
+.monitoringHead {
+    display: flex;
+}
+
+.monitoringHead .left {
+   display: flex;
+   align-items: center;
+   width: 100%;
+}
+
+.monitoringHead .right {
+   align-items: center;
+   display: flex;
+}
+
+.monitoringHead .image {
+
+}
+
+.monitoringHead .content {
+
+}
+
+.monitoringHead .menu button{
+    background-color: transparent !important;
+    border: none;
+    font-size: 21px;
+}
+
+.monitoringHead .title {
+   color: #EEF1F5 !important;
+   font-size: 18px;
+   font-weight: 800;
+}
+
+.monitoringHead .subtitle {
+   color: #B0B7C3 !important;
+   font-size: 14px;
+   font-weight: 500;
+}
+
+.image img {
+   width: 64px;
+}
+
+.monitoringBody {
+
+}
+
+.monitoringBody .statusTitle {
+   color: #B0B7C3 !important;
+   font-size: 14px;
+   font-weight: 500;
+}
+
+.monitoringBody .status {
+   color: green !important;
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.detailDiv {
+   display: flex;
+   justify-content: space-between;
+}
+
+.left {
+    
+}
+
+.right {
+
+}
+
+.detailTitle {
+   color: #B0B7C3 !important;
+   font-size: 17px;
+   font-weight: 300;
+}
+
+.detail {
+   color: #B0B7C3 !important;
+   font-size: 17px;
+   font-weight: 700;
+   padding-top: 10px;
+}
+
+.monitoringServiceCard {
+   padding: 18px 22px;
+   background-color: #232A37;
+   border-radius: 8px;
+}
+
+.monitoringServiceCard .cardHeadline {
+   display: flex;
+}
+
+.monitoringServiceCard .cardBody {
+
+}
+
+.serviceLastMonthStatus {
+   display: flex;
+}
+
+.serviceStatusSign {
+   height: 22px;
+   width: 15px;
+   border-radius: 4px;
+}
+
+.serviceStatusDaySign {
+   height: 17px;
+   width: 7px;
+   border-radius: 4px;
+   margin: 0px 1px;
+   background-color: grey
+}
+
+.statusOffline {
+   background-color: red;
+}
+
+.statusOnline {
+   background-color: green;
+}
+
+.statusMaintenance {
+   background-color: orange;
+}
+
+.miniIcon {
+   color: white !important;
+   display: flex;
+}
+
+.miniIcon:hover {
+   cursor: pointer;
+}
+
+.monitoring-statusbar {
+   width: 100%;
+   height: 20px;
+   overflow: hidden;
+   position: absolute;
+}
+
+.monitoring-statusbar-wrapper {
+   width: 100%;
+   height: 20px;
+   display: flex;
+   position: absolute;
+}
+
+.monitoring-statusbar-item {
+   width: 100%;
+   height: 100%;
+   border-radius: 7px;
+   cursor: help;
+}
+
+.monitoring-statusbar-item-success {
+   background-color: #4FBF26;
+}
+
+.monitoring-statusbar-item-warning {
+   background-color: #FF7900;
+}
+
+.monitoring-statusbar-item-danger {
+   background-color: #E8282B;
+}
+
+.monitoring-statusbar-item-empty {
+   background-color: #A9A9A9;
+}

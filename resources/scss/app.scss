@@ -1,0 +1,50 @@
+/* Lib */
+@import "lib/bootstrap.min.css";
+// @import "lib/google-fonts.css";
+@import "lib/jquery.dataTables.min.css";
+@import "lib/quillEmoji/quill-emoji.css";
+@import "lib/select2.min.css";
+@import "lib/select2-bootstrap.min.css";
+@import "lib/slimselect.min.css";
+@import "lib/simple-calendar.css";
+
+@import "abstract/_variables";
+@import "abstract/_typography";
+@import "abstract/_common";
+@import "components/_table";
+@import "components/_blobs";
+@import "components/_buttons";
+@import "components/_card";
+@import "components/_customCropper";
+@import "components/_dataTables";
+@import "components/_forms";
+@import "components/_modals";
+@import "components/_topSearchBar";
+@import "components/_staticAlerts";
+@import "layout/_navbar";
+@import "layout/_pageLayout";
+
+
+// @import "pages/_auth";
+@import "pages/_changelog";
+@import "pages/_communityCenter";
+@import "pages/_customer";
+@import "pages/_dashboard";
+@import "pages/_gameconnect";
+@import "pages/_monitoring";
+@import "pages/_payment";
+@import "pages/_settings";
+@import "pages/_start";
+@import "pages/_support";
+@import "pages/_surveys";
+@import "pages/_ticket";
+
+/* Customs */
+@import "custom-elements/_cropper";
+@import "custom-elements/_notifications";
+@import "custom-elements/_select2";
+
+/* Lib */
+@import "lib/cropper.min.css";
+@import "lib/customCheckBox.css";
+@import "lib/customUpload.css";

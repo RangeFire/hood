@@ -1,0 +1,94 @@
+.premiumBadge {
+    font-size: 12px;
+}
+
+.settingsHeadline {
+    color: #EEF1F5!important;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.settingsSubHead {
+    color: #B0B7C3!important;
+    font-size: 16px;
+}
+
+.settingsManualLink {
+    color: #B0B7C3!important;
+    font-weight: 600;
+    border-bottom: 1px solid red;
+}
+
+.settingsSpacer {
+    margin: 30px 0px 30px 0px;
+    border-bottom: 1px solid #B0B7C3;
+}
+
+.brandLogo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #B0B7C3;
+    padding: 6px;
+}
+
+
+.support-time-days {
+
+    width: 100%;
+    margin: 0 0 24px 0;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+
+    .day-card {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        min-width: 120px;
+
+        height: 60px;
+        border-radius: 10px;
+        background-color: #1F2128;
+
+        transition: all 0.3s ease-in-out;
+
+        cursor: pointer;
+
+        a {
+            font-size: 16px;
+            color: #B0B7C3!important;
+        }
+
+        &:hover:not(.active) {
+            transform: scale(1.06);
+
+            a {
+                color: #2A85FF!important;
+            }
+
+        }
+
+    }
+
+    .day-card.active {
+
+        border: solid 1px #2A85FF;
+        transition: all 0.3s ease-in-out;
+
+        a {
+            color: #2A85FF!important;
+        }
+
+    }
+
+}

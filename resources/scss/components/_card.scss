@@ -1,0 +1,102 @@
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border-radius: $mediumRadius;
+    background-color: $blackBackground;
+    //box-shadow: $cardShadowOuter;
+    border: none;
+
+    .card {
+        box-shadow: $cardShadowInner;
+    }
+
+    &-inline {
+        @extend .card;
+        .card-content {
+            height: 100px;
+            width:100%;
+
+            .inline-image {
+                display: inline;
+                float: left;
+                height: 100%;
+                width: 30%;
+                padding: {
+                    left: 10%;
+                    top: 26px;
+                }
+                object {
+                    transform: scale(1.15);
+                }
+            }
+            .inline-text {
+                display: inline;
+                float: right;
+                height: 100%;
+                width: 70%;
+                padding: {
+                    left: 20px;
+                    right: 20px;
+                    top: 30px;
+                }
+            }
+
+        }
+        
+    }
+    
+
+    &-header {
+        background: transparent!important;
+    }
+
+    &-body {
+        padding: 21px;
+        margin: {
+            left: 21px;
+        }
+        .card_headline {
+            @extend .h4;
+            font-weight: bold;
+
+            margin: {
+                bottom: 12px;
+            }
+
+            label {
+                @extend .text-muted;
+            }
+            
+        }
+    }
+
+    &-table {
+        @extend .card;
+        overflow-x: scroll;
+    }
+
+}
+
+.card_headline {
+    @extend .h4;
+    font-weight: bold;
+
+    margin: {
+        bottom: 32px;
+    }
+
+    label {
+        @extend .text-muted;
+    }
+
+}
+
+.statistic_card {
+    min-width: 195px!important;
+}

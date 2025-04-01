@@ -1,0 +1,244 @@
+*{
+    ::-moz-selection { /* Code for Firefox */
+        color: #EFEFEF;
+        background: #2A85FF;
+      }
+      
+      ::selection {
+        color: #EFEFEF;
+        background: #2A85FF;
+      }
+}
+
+body {
+    background-color: $background!important;
+}
+
+.page_content {
+    margin-left: 120px;
+    padding: 62px 86px;
+    // padding: 42px 86px;
+    
+}
+
+.customContainer {
+    max-width: 1250px;
+}
+
+.subNavigation {
+    padding: 0px 20px;
+}
+
+.trialSection {
+    background: #22252D;
+    border: 2px solid #494E5B;
+    box-shadow: 0px 40px 64px -24px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    padding: 15px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trialSection .runtime{
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 34px;
+    color: #EFEFEF!important;
+}
+
+.trialSection .link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #EFEFEF!important;
+    background: #272B30;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), inset 0px 0px 1px #000000;
+    border-radius: 8px;
+    padding: 2px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.subNavigationSection {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.subNavigationSection .navlink {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 34px;
+    color: #494E5B!important;
+    padding-right: 21px;
+}
+
+.subNavigationSection .active {
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 44px;
+    color: #EFEFEF!important;
+}
+
+.subNavLeft .link{
+    background: #22252D;
+    border: 1px solid #494E5B;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), inset 0px 0px 1px #000000;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7F8596!important;
+    padding: 2px 8px;
+}
+
+.page_headline {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    color: $title;
+}
+
+.page_subtitle {
+    font-weight: 400;
+    color: $body;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.page_headline_second {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 120%;
+    margin-bottom: 32px;
+    color: $title;
+}
+
+.orange-header {
+    width: 100vw;
+    background: linear-gradient(265.18deg, #EB6316 2.14%, #F49603 96.98%);
+    position: absolute;
+    z-index: -1;
+
+    &-big {
+        @extend .orange-header;
+        height: 274px;
+    }
+
+    &-small {
+        @extend .orange-header;
+        height: 200px;
+    }
+
+}
+
+.lightgrey-header {
+    width: 100vw;
+    background: $blackBackground;
+    position: absolute;
+    z-index: -1;
+
+    &-big {
+        @extend .lightgrey-header;
+        height: 274px;
+    }
+
+    &-small {
+        @extend .lightgrey-header;
+        height: 200px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent !important;;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #bec5cb;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.column-elements {
+    background: $background;
+    border-radius: 8px;
+    padding-top: 16px!important;
+    padding-bottom: 16px!important;
+}
+
+.statisticCard {
+    background-color: #22252D;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px -4px rgb(0 0 0 / 25%), inset 0px -1px 1px rgb(0 0 0 / 49%), inset 0px 2px 1px rgb(255 255 255 / 6%);
+    border-radius: 12px;
+}
+
+.customHoodCard {
+    background-color: #22252D;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px -4px rgb(0 0 0 / 25%), inset 0px -1px 1px rgb(0 0 0 / 49%), inset 0px 2px 1px rgb(255 255 255 / 6%);
+    border-radius: 12px;
+}
+
+.favoriteProjectStar {
+    color: white;
+}
+
+.favoriteProjectStar:hover {
+    color: gold;
+}
+
+.activeProjectStar {
+    color: gold;
+}
+
+/* Smartphone Hochformat (Portrait) */
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 479px) {
+    .page_content {
+        margin-left: 0px;
+        padding: 80px 20px;
+    }
+
+    .page_title_area .h2 {
+        margin-top: 20px;
+        font-size: 26px!important;
+    }
+
+    .page_headline {
+        margin-top: 20px;
+        font-size: 26px!important;
+    }
+
+    .card, .card-table, .card-inline {
+        margin: 10px 0px;
+    }
+}
+
+/* Smartphone Querformat (Landscape) */
+@media only screen
+  and (min-width: 480px)
+  and (max-width: 1000px) {
+
+}
+
+/* Smartphone Querformat (Landscape) */
+@media only screen
+  and (min-width: 480px)
+  and (max-width: 10480) {
+
+}

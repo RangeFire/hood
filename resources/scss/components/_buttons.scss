@@ -1,0 +1,126 @@
+button:disabled, button[disabled]{
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.smallCardButton {
+    background: $offWhite;
+    border: 1px solid $line;
+    box-sizing: border-box;
+    box-shadow: $buttonShadow;
+    border-radius: $smallRadius;
+    padding: 6px 12px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: $lh150;
+    color: $body;
+}
+
+.oauth-button {
+    background: #1F2128!important;
+    border: 2px solid #343742!important;
+    border-radius: 12px!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #EFEFEF;
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding: 15px 51px;
+}
+
+.oauth-button:hover {
+    color: #EFEFEF;
+}
+
+.button {
+
+    @extend .lightButton;
+    border-radius: $smallRadius;
+    text-align: center;
+    padding: $btnPadding;
+    border: none;
+
+    &-primary {
+        border-radius: $smallRadius;
+        background: $offWhite;
+        border: 1px solid $line;
+        box-sizing: border-box;
+        box-shadow: $buttonShadow;
+        font-size: 16px;
+        font-weight: 600;
+        padding: $btnPadding;
+        border: none;
+
+        &:hover {
+            background: $inputBackground;
+        }
+
+        &-orange {
+            border-radius: $smallRadius;
+            color: $offWhite!important;
+            background: $bgGradient-blue;
+            font-size: 16px;
+            font-weight: 600;
+            padding: $btnPadding;
+            border: none;
+
+            &:hover {
+                color: $offWhite!important;   
+            }
+        }
+
+        &-blue {
+            border-radius: $smallRadius;
+            color: $offWhite!important;   
+            background: $bgGradient-blue;
+            font-size: 16px;
+            font-weight: 600;
+            padding: $btnPadding;
+            border: none;
+
+            &:hover {
+                color: $offWhite!important;   
+            }
+        }
+
+        &-red {
+            border-radius: $smallRadius;
+            color: $offWhite!important;
+            background: $error;
+            font-size: 16px;
+            font-weight: 600;
+            padding: $btnPadding;
+            border: none;
+            box-shadow: none;
+
+            &:hover {
+                color: $offWhite!important;
+                border: none;
+                box-shadow: none;
+            }
+        }
+
+    }
+
+    &-secondary {
+        @extend .darkButton;
+        border-radius: $smallRadius;
+        background: $offWhite;
+        border: 1px solid $line;
+        box-sizing: border-box;
+        box-shadow: $buttonShadow;
+        padding: $btnPadding;
+        border: none;
+    }
+} 
+
+.modal-footer .button-primary, .modal-footer .button-primary-orange {
+    padding: $modalBtnPadding;
+    // width: 48%;
+}

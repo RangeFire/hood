@@ -1,0 +1,137 @@
+.changelogStatisticCard {
+    background-color: #22252D;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px -4px rgb(0 0 0 / 25%), inset 0px -1px 1px rgb(0 0 0 / 49%), inset 0px 2px 1px rgb(255 255 255 / 6%);
+    border-radius: 12px;
+    height: 270px;
+}
+
+.changelogPostItem {
+    border-radius: 12px;
+    padding: 20px;
+    height: 24vh;
+    margin-bottom: 120px;
+    padding-right: 20px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+// .changelogPostItem:hover {
+//     cursor: pointer;
+//     filter: brightness(0.5);
+// }
+
+.postItemContent {
+    position: absolute;
+    bottom: -64px;
+    left: 0px;
+    width: 100%;
+}
+
+.postItemMenu {
+
+}
+
+.postItemContentItem {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.postItemEditLink {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #EFEFEF!important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 500;
+    transform: translate(-50%, -50%);
+    padding-bottom: 2px;
+    border-bottom: solid 1px white;
+}
+
+.postItemSubheadline {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #B0B7C3!important;
+    width: 100%;
+    text-align: end;
+}
+
+.postItemHeadline {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #EFEFEF!important;
+    width: 100%;
+    text-align: end;
+}
+
+.postItemLikes {
+    color: #30B28C;
+}
+
+.postItemSubTitle{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #B0B7C3!important;
+}
+
+.postItemTitle {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #EFEFEF!important;
+}
+
+.postItemDate {
+
+}
+
+.changelogWriterBox {
+    background-color: #22252D!important;
+    border: 1px solid rgba(0, 0, 0, 0.1)!important;
+    box-shadow: 0px 4px 8px -4px rgb(0 0 0 / 25%), inset 0px -1px 1px rgb(0 0 0 / 49%), inset 0px 2px 1px rgb(255 255 255 / 6%)!important;
+    border-radius: 12px!important;
+    padding: 23px!important;
+    color:white!important;
+    height: 30vh;
+}
+
+.postEditor {
+    min-height: 120vh;
+    border-radius: 12px;
+}
+
+.postEditorCard {
+    
+}
+
+.changelogStateLabel {
+    padding: 12px;
+    background-color: #212529;
+    border-radius: 12px;
+    font-weight: 600;
+    float: right;
+    color: white!important;
+}
+
+.changelogEditButton {
+    padding: 12px;
+    background-color: #212529;
+    border-radius: 12px;
+    font-weight: 600;
+    float: right;
+    color: white!important;
+}

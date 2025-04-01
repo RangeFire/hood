@@ -1,0 +1,56 @@
+.table * {
+    text-align: center;
+}
+
+.table {
+    border: none!important;
+    width: 100%;
+
+    thead {
+        border: none!important;
+        tr {
+            border: none!important;
+            th {
+                @extend .paragraphBold;
+                border: none!important;
+            }
+        }
+    }
+
+    tbody {
+        border: none!important;
+        td {
+            @extend .paragraphSmallSlim;
+            border-top: 1px solid #E7E7ED;
+            padding: 12px;
+
+            a {
+                color: $label;
+                cursor: pointer;
+
+                i.fas {
+                    color: $label;
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    color: $orangeDark;
+
+                    i.fas {
+                        color: $orangeDark;
+                    }
+                }
+
+            }
+
+            & > *:not(:first-child) {
+                margin-left: 12px;
+            }
+
+        }
+
+        
+
+    }
+
+}

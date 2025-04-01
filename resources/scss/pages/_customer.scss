@@ -1,0 +1,43 @@
+
+.plan_card {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.plan_card:hover:not(.plan_card_disabled){
+    opacity: 1;
+    border: solid 2px $blueLight;
+    transform: scale(1.06);
+}
+
+.plan_card_disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transition: all 0.3s ease;
+}
+.cancel_abo{
+    color: $blueLight;
+    font-family: $font;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.your_choice_card{
+    border: solid 2px $blueLight;
+    transition: all 0.3s ease;
+}
+
+.your_choice_button{
+    font-family: $font;
+    font-weight: bold;
+    background: $bgGradient-blue;
+    color: $offWhite!important;
+    border-radius: 18px;
+}
+
+.your_choice_button:hover{
+    color: $offWhite!important;
+}

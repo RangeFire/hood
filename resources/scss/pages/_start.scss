@@ -1,0 +1,95 @@
+.startContainer {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.startHeadline {
+    text-align: center;
+    font-size: 36px;
+    color: $offWhite;
+    font-size: 37px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.startHeadline:hover {
+    color: $offWhite;
+}
+
+.startChooseBox {
+    padding: 30px;
+    border-radius: 12px;
+    background-color: $inputBackground;
+    cursor: pointer;
+}
+
+.startChooseBox .headline {
+    font-size: 36px;
+    color: $title;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+}
+
+.startChooseBox .subtitle {
+    font-size: 36px;
+    color: $body;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+}
+
+.modal-body .headline {
+    font-size: 36px;
+    color: $offWhite!important;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+}
+
+.modal-body .subtitle {
+    font-size: 36px;
+    color: $body!important;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+}
+
+.customNumberInput {
+  background-color: $inputBackground;
+  padding: 12px;
+  border-radius: 12px;
+  color: $offWhite;
+  font-size: 24px;
+  max-width: 120px;
+  text-align: center;
+  border: none;
+}
+
+.customTextInput {
+  background-color: $inputBackground;
+  padding: 12px;
+  border-radius: 12px;
+  color: $offWhite;
+  font-size: 24px;
+  text-align: center;
+  border: none;
+}
+
+.customButton {
+  background: #377DFF;
+  border-radius: 8px;
+  padding: 10px 20px 10px 20px;
+  color: $offWhite;
+  font-size: 16px;
+  border: none;
+  font-weight: 500;
+}

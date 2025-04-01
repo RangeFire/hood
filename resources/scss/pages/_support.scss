@@ -1,0 +1,123 @@
+.pageHeadline {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pageHeadline .leftSite {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: flex-start;
+  }
+
+  .pageHeadline .goBack {
+      color: #7F8596!important;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 150%;
+  }
+
+  .pageHeadline .pageTitle {
+      color: #EFEFEF!important;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      font-weight: 600;
+  }
+
+  .supportCard {
+      box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.25), inset 0px -1px 1px rgba(0, 0, 0, 0.49), inset 0px 2px 1px rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 32px;
+      background-color: #22252D;
+      height: 70vh;
+  }
+
+  .supportDetailDataSets {
+      background-color: #1F2128;
+      padding: 8px;
+      border-radius: 12px;
+  }
+
+  .supportDetailDataSet {
+      display: flex; 
+      padding: 12px 12px 12px 0px;
+  }
+
+  .supportDetailDataSet .icon {
+      color: #EFEFEF!important;
+      font-size: 23px;
+      margin-right: 15px; 
+  }
+
+  .supportDetailDataSet .content{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .supportDetailDataSet .head{
+      color: #777E91!important;
+      font-weight: 400;
+      font-size: 12px;
+  }
+
+  .supportDetailDataSet .sub{
+      color: #EFEFEF!important;
+      font-weight: 500;
+      font-size: 14px;
+  }
+
+  .supportCard .chatTitle {
+      color: #EFEFEF!important;
+      font-weight: 600;
+      font-size: 18px;
+  }
+
+  .supportCard i {
+      color: #EFEFEF!important;
+  }
+
+  .supportCard .subtitle {
+      color: #FAFAFA!important;
+      font-weight: 600;
+      font-size: 16px;
+  }
+
+  .chatCreator a{
+      color: #777E90!important;
+      font-weight: 400;
+      font-size: 12px;
+  }
+
+  .chatCreator span{
+      color: #EFEFEF!important;
+      font-weight: 600;
+      font-size: 12px;
+  }
+
+  .supportAgentImage {
+      border-radius: 50%;
+      width: 2.3rem;
+  }
+
+  .addSupportAgent:hover {
+      cursor: pointer;
+  }
+
+
+  /* Smartphone Hochformat (Portrait) */
+@media only screen
+and (min-width: 320px)
+and (max-width: 479px) {
+    .checkoutCenter {
+        position: static!important;
+        padding: 35px;
+        margin-top: 30px;
+        -webkit-transform: none!important;
+        transform: none!important;
+    }
+
+    .featureImage {
+        display: none;
+    }
+}

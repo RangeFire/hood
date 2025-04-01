@@ -1,0 +1,9 @@
+.bg-background {
+    background: $background!important;
+}
+
+.overflow-dotted {
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+}

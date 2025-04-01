@@ -1,0 +1,25 @@
+.customCheckBoxContainer {
+    display: flex
+}
+
+.check-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-box svg {
+    position: absolute;
+}
+
+.check-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-text small{
+    margin: 0 0 0 16px;
+}

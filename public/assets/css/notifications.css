@@ -1,0 +1,60 @@
+.notifications {
+  position: fixed;
+  top: 0px;
+  width: 80%;
+  pointer-events: none;
+  min-height: 95vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.notification-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.notification {
+  position: relative;
+  width: auto;
+  max-width: 90%;
+  height: 56px;
+  border-radius: 12px;
+  white-space: nowrap;
+  padding: 20px 25px 18px 52px;
+  opacity: 0;
+  margin: 5px 5px;
+  text-align: left;
+  overflow: hidden;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.notf-success {
+  background-color: #00BA88;
+}
+
+.notf-error {
+  background-color: #EB5757;
+}
+
+.notification svg {
+  position: absolute;
+  left: 15px;
+  transform: translate(0, -2px);
+}
+
+.notf-error svg {
+  position: absolute;
+  left: 15px;
+  transform: translate(0, -2px);
+}
+
+.notification h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 120%;
+  color: #F7F7F8;
+}

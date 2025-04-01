@@ -1,0 +1,40 @@
+.staticWarning-container {
+    // height: 76px;
+    padding: 14px;
+    padding-left: 80px;
+    background: linear-gradient(0deg, rgba(244, 183, 64, 0.25), rgba(244, 183, 64, 0.25)), #F7F7F8;
+    border: 2px solid #F4B740;
+    box-sizing: border-box;
+    border-radius: 12px;
+
+    svg {
+        position: absolute;
+        top: 14px;
+        left: 28px;
+    }
+
+    &-red {
+        @extend .staticWarning-container;
+        background: linear-gradient(0deg, rgba(235, 87, 87, 0.35), rgba(235, 87, 87, 0.35)), #F7F7F8;
+        border: 2px solid #EB5757;
+    }
+
+}
+
+.staticWarning-header {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #14142A;
+}
+
+.staticWarning-subheader {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #565677;
+}

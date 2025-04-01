@@ -1,0 +1,90 @@
+* {
+    font-family: $font;
+    font-style: normal;
+    line-height: $lh120;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+.h1 {
+    color: $title!important;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.h2 {
+    color: $title!important;
+    font-size: 37px;
+    font-weight: 800;
+}
+
+.h3 {
+    color: $title!important;
+    font-size: 28px;
+    font-weight: 800;
+    
+}
+
+.h4 {
+    color: $title!important;
+    font-size: 21px;
+    font-weight: 800;
+    
+}
+
+.paragraph {
+    color: $body!important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: $lh150;
+}
+
+.paragraphBold {
+    color: $title!important;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: $lh150;
+}
+
+.paragraphSmallBold {
+    color: $title!important;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.paragraphSmallSlim {
+    color: $body!important;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.text-muted {
+    color: $body!important;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.darkButton {
+    color: $title!important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.lightButton {
+    color: $offWhite!important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.a-default-hover {
+    transition: ease-in-out 0.15s;
+    color: #5CA8EE!important;
+
+    &:hover {
+        color: #1784D5!important;
+    }
+
+}

@@ -1,0 +1,16 @@
+.dataTables_wrapper .row:first-child {
+    display: none;
+}
+
+.page-item.active .page-link {
+    background-color: $blueMain;
+    border-color: $blueMain;
+}
+
+#theTableSecond_filter {
+    display: none;
+}
+
+#theTableSecond_length {
+    display: none;
+}

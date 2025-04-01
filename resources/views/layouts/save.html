@@ -1,0 +1,130 @@
+<section class="page_wrapper">
+    <div class="container-fluid">
+        <div class="row">  
+            <div class="navbarTopLeft">
+                <div class="row">
+                    <div class="col pt-3">
+                        @if(Subscription::hasFreeTrial())
+                        <a style="font-weight: 600;font-size: 17px;color: #B0B7C3;">Testlaufzeit: <span style="color: #2A85FF;">{{Subscription::hasFreeTrial() > 1 ? Subscription::hasFreeTrial().' Tage' : Subscription::hasFreeTrial().' Tag'}}</span> verbleibend | <b><a style="font-weight: 600;font-size: 17px;color: #2A85FF;" href="/products">Verlängern</a></b></a>
+                        @endif
+                    </div>
+                </div>
+            </div>                         
+            <div class="navbarTopRight">
+                <div class="row">
+                    <div class="burgerMenuMobile">
+                        <i class="fa-solid fa-bars" onclick="toggleMobileNav()"></i>
+                    </div>
+                    <div clas="col">
+                    <div class="dropdown dropleft">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                        <img src="/assets/images/changeProject.png">
+                        <span class="caret"></span>
+                        </button>
+                            <ul class="dropdown-menu dropdownMenuTopNav" style="right: 0px;">
+                            @foreach ($userProjects as $userProject) 
+                                @if($userData->favorite_project == $userProject->project_id)
+                                    <li class="customLink"><i class="fa-solid fa-star activeProjectStar pr-1"></i> <a tabindex="-1" href="/project/change/{{ $userProject->project_id }}">{{ $userProject->project->name }}</a></li>
+                                @else
+                                    <li class="customLink" onclick="setFavoriteUserProject({{$userProject->project_id}}, {{$userData->id}})"><i class="fa-regular fa-star favoriteProjectStar pr-1"></i> <a tabindex="-1" href="/project/change/{{ $userProject->project_id }}">{{ $userProject->project->name }}</a></li>
+                                @endif
+                            @endforeach 
+                            <li class="addProjectLink"><a tabindex="-1" style="color: #377DFF;" href="/start">Projekt hinzufügen</a></li>
+                            </ul>
+                    </div>
+                    </div>
+
+                    <div clas="col" style="padding-top: 9px;">
+                    <div class="dropdown dropleft">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                        <img style="width: 25px;" src="{{ $userData->avatar ? $userData->avatar : '/assets/images/roboter.png' }}">
+                        <span class="caret"></span>
+                        </button>
+                            <ul class="dropdown-menu dropdownMenuTopNavProfile" style="right: 0px;">
+                                <li class="profilMenuItem"><a tabindex="-1" data-toggle="modal" data-target="#profilSettingsModal">Mein Profil</a></li>
+                                <li class="profilMenuItem"><a tabindex="-1" href="/products">Meine Produkte</a></li>
+                                <li class="profilMenuItem"><a tabindex="-1" href="/logout">Abmelden</a></li>
+                            </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 left_bar">
+                <div class="nav-side-menu" id="nav-side-menu">
+                        <i class="fa-solid fa-xmark closeMobileNav" onclick="toggleMobileNav()"></i>
+                        @if (!(new App\Models\Project)->findProject(session('activeProject'))->logo || !Subscription::hasActiveSubscription('branding', session('activeProject')))
+                            <div class="brand" style="background: url(/assets/images/logo/logoIconTransparent.png); background-repeat: no-repeat; background-size: contain;">
+                        @else   
+                            <div class="brand" style="background-image: url('{{(new App\Models\Project)->findProject(session('activeProject'))->logo}}'); background-repeat: no-repeat; background-size: contain;">
+                        @endif
+                            <h6 style="padding-left: 10px;">Hood - v0.1.6 Alpha</h6>
+                            <small style="padding-left: 10px;">Community Management</small>
+                        </div>
+                        
+                    <div class="menu-list">
+                        <ul id="menu-content" class="menu-content out">
+                            <li class="nav-item"><a href="/dashboard" ><div id="nav-text" class="nav-element-text"><i class="fas fa-home" aria-hidden="true"></i>Dashboard</div></a></li>
+
+                            <!-- Support Tools-->
+                            <li class="nav-item modal_link modal_bottom_link"><a style="font-family:'Montserrat'; font-size: 12px;font-weight: 700; text-transform: uppercase; width: 100%">Deine Funktionen<span style="float: right; color: #F28A08;"></span></a></li>
+
+                            @if($permissions['support'])
+                                <li class="nav-item"><a href="/tickets"><div id="nav-text" class="nav-element-text"><i class="fa-solid fa-messages-question"></i> Support Center <span class="badge badge-danger" id="open_tickets_counter"></span></div></a></li>
+                            @endif
+
+                            
+                            <li class="nav-item"><a href="/gameserver"><div id="nav-text" class="nav-element-text"><i class="fa-solid fa-gamepad-modern"></i> Gameserver</div></a></li>
+                            
+                            
+                            @if($permissions['surveys'])
+                                {{-- <li class="nav-item"><a href="/surveys"><div id="nav-text" class="nav-element-text"><i class="fa-solid fa-square-poll-vertical" ></i>Umfragen System</div></a></li> --}}
+                            @endif
+                                                               
+                            @if($permissions['monitoring'])
+                                <li class="nav-item"><a href="/monitoring"><div id="nav-text" class="nav-element-text"><i class="fa-regular fa-monitor-waveform"></i> System Monitoring</div></a></li>
+                            @endif
+                            
+                            <li class="nav-item"><a href="/changelogs"><div id="nav-text" class="nav-element-text"><i class="fa-duotone fa-book"></i> Changelogs</div></a></li>
+
+                            @if($permissions['wishes'])
+                                <li class="nav-item"><a href="/wishes"><div id="nav-text" class="nav-element-text"><i class="fa-solid fa-star-shooting"></i> Nutzerwünsche</div></a></li>
+                            @endif
+
+                            @if($permissions['bugreports'])
+                                <li class="nav-item"><a href="/bugreports"><div id="nav-text" class="nav-element-text"><i class="fa-solid fa-bugs"></i> Bugtracking</div></a></li>
+                            @endif
+
+                            <!-- Management-->
+                            @if($permissions['manage_users'] || $permissions['settings'])
+                                <li class="nav-item modal_link modal_bottom_link"><a style="font-family:'Montserrat'; font-size: 12px;font-weight: 700; text-transform: uppercase; width: 100%">Administration<span style="float: right; color: #F28A08;"></span></a></li>
+                            @endif
+
+                            @if($permissions['manage_users'])
+                                <li class="nav-item"><a href="/users"><div id="nav-text" class="nav-element-text"><i class="fa-solid fa-people-group"></i> </i>Teamverwaltung</div></a></li>
+                            @endif
+
+                            @if($permissions['settings'])
+                                <li class="nav-item"><a href="/settings"><div id="nav-text" class="nav-element-text"><i class="fa-regular fa-sliders"></i> Projekteinstellungen</div></a></li>
+                            @endif
+                            
+                                <li class="nav-item"><a href="https://{{(new App\Models\Project)->findProject(session('activeProject'))->project_hash.'.'.env('APP_DOMAIN').'/cc/'}}" target="_blank"><div id="nav-text" class="nav-element-text"><i class="fa-sharp fa-solid fa-browser"></i> Community Center</div></a></li>
+                        </ul>
+
+                    </div>
+                    <div class="nav-bottom">
+                        <div class="row mb-4">
+                            <div class="col d-flex justify-content-center">
+                                <a>{{ session('activeProject') == 'empty' ? 'Du hast kein Projekt' : (new App\Models\Project)->findProject(session('activeProject'))->name}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9 right_contents">
+
+            </div>
+        </div>
+    </div>
+</section>
