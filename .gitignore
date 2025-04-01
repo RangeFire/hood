@@ -1,0 +1,52 @@
+# Laravel specific
+/vendor/
+/node_modules/
+/public/hot
+/public/storage
+/storage/*.key
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+/.env
+/.env.backup
+/.env.testing
+/.phpunit.result.cache
+/Homestead.json
+/Homestead.yaml
+/.vagrant
+/npm-debug.log
+/yarn-error.log
+
+# IDE specific
+/.idea
+/.vscode
+*.sublime-project
+*.sublime-workspace
+/.phpstorm.meta.php
+/_ide_helper.php
+/_ide_helper_models.php
+
+# OS specific
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Build files
+/public/js/app.js
+/public/css/app.css
+/public/mix-manifest.json
+/public/build/
+
+# Database
+*.sqlite
+*.sqlite-journal
+
+# Testing
+.phpunit.result.cache
+
+# Misc
+/coverage/
+.php_cs.cache
+.php-cs-fixer.cache
