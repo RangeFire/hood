@@ -43,7 +43,7 @@ class GameOSAdminService extends Service {
 
     public function alertNewGameOSTicket() {
 
-        $webhookurl = "https://discord.com/api/webhooks/995764322548584538/TVSUVffreYaF5TRkNXG9nydb0_L1QZ4uTj9jqVZWWLwa1-AzLT7lhze7T5PM3F0HTeSu";
+        $webhookurl = "YOURWEBHOOKURL";
     
         $timestamp = date("c", strtotime("now"));
 
